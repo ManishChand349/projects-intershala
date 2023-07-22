@@ -22,7 +22,7 @@
               <a href=""><i class="fas fa-search"></i></a>
             </li>
             <li>
-              <a href=""><i class="fas fa-home"></i></a>
+              <a href=""><i class="fas fa-home active" ></i></a>
             </li>
             <li>
               <a href=""><i class="far fa-newspaper"></i></a>
@@ -108,7 +108,6 @@
             <div class="line2"></div>
           </div>
         </div>
-
         <div class="con-overtime">
           <h2>Contributions Overtime</h2>
           <div class="employer-data">
@@ -118,13 +117,40 @@
             </div>
             <div class="employer1">
               <div class="dot"></div>
-
               <p><span class="shadow-1">Employee:</span> K 73,500</p>
             </div>
             <div class="employer1">
               <div class="dot"></div>
-
               <p><span class="shadow-1">Total Interest:</span> K 73,500</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+        <h2 class="How-do">How do i compare to my peers?</h2>
+        <p><span style=" color: #968e8e;
+          ">these number represent current goal achievement</span></p>
+        <div class="age-salary">
+          <div class="user-age">
+            <h3>Age: <span>Under 30</span></h3>
+            <h3>Salary: <span>K 20-K 30</span></h3>
+            <h3>Gender: <span>Male</span></h3>
+          </div>
+          <div class="pie-2">
+            <div class="">
+              <div class="pie animate no-round" style="--p:78;--c:#968e8e;">
+                78%
+              </div>
+              <h3 class="Ave">Average</h3>
+            </div>
+            <div>
+              <div class="pie animate" style="--p:95;--c:#968e8e">95%</div>
+              <h3 class="top">Top</h3>
+            </div>
+            <div>
+              <div class="pie animate" style="--p:59;--c:#968e8e">59%</div>
+              <h3 class="me">Me</h3>
             </div>
           </div>
         </div>
@@ -133,36 +159,38 @@
         <div class="left-top">
           <h2>Retirement Strategy</h2>
           <div class="strategy">
-          <h3>Employee Contribution</h3>
-          <input type="range" class="Range" />
-          <span class="Value"></span>
-        </div>
-        <div class="strategy">
-          <h3>Retirement Age</h3>
-          <input type="range" class="Range" />
-          <span class="Value">65</span>
-          <div class="line3"></div>
-        </div>
-        <div>
-          <p>Employer Contribution <span>8.4%</span></p>
-          <p>Interest Rate <span>5%</span></p>
-          <button class="Updata-btn">Update</button>
-        </div>
-        <a href="" class="V-help">View Help Doce</a>
-      </div>
-        <div>
-          <div>
-
+            <h3>Employee Contribution</h3>
+            <input type="range" class="Range" />
+            <span class="Value"></span>
           </div>
-          <div>
-            <p>Are you considering a <span>Housing Advance</span></p>
-            <p>Are you considering a <span>limited time reduced interest.</span></p>
-
-            <a href="">Learn More ></a>
+          <div class="strategy">
+            <h3>Retirement Age</h3>
+            <input type="range" class="Range" />
+            <span class="Value">65</span>
+            <div class="line3"></div>
+          </div>
+          <div class="Em-contri">
+            <p>Employer Contribution <span class="em-N-1">8.4%</span></p>
+            <p>Interest Rate <span class="em-N-2">5%</span></p>
+            <button class="Updata-btn">Update</button>
+          </div>
+          <a href="" class="V-help">View Help Doce></a>
+        </div>
+        <div class="bottom-div">
+          <div class="line-4"></div>
+          <div class="left-bottom">
+            <p>
+              Are you considering a<br /><span class="Advance"
+                >Housing Advance?</span
+              >
+            </p>
+            <p><span class="limited">limited time reduced interest.</span></p>
+            <a href="" class="learn-more">Learn More></a>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./javascript/index.js"></script>
   </body>
 </html>

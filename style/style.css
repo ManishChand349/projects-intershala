@@ -5,17 +5,18 @@
   text-decoration: none;
 }
 body {
-  height: 100vh;
   font-family: serif;
   list-style: none;
   background: #cecacaa7;
+  height: 100vh;
 }
 .container {
-  height: 100vh;
   display: flex;
 }
 .fas {
   font-size: 20px;
+  padding: 7px;
+
 }
 .fas:hover {
   cursor: pointer;
@@ -31,20 +32,31 @@ li {
 .fa-newspaper,
 .fa-bell {
   font-size: 20px;
+  padding: 7px;
+
 }
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   margin: 0px 2px;
   padding: 11px;
   border-top-left-radius: 25px;
   background: #fff;
-  
 }
-
-img {
+.active{
+  background: #0342fe;
+  padding: 7px;
+  color: #fff;
+  border-radius: 8px;
+}
+.fas:hover,.far:hover{
+  background: #0342fe;
+  padding: 7px;
+  color: #fff;
+  border-radius: 8px;
+}
+img{
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -53,7 +65,7 @@ img {
 .profile {
   display: flex;
   align-items: center;
-  margin: 21px 29px 29px 46px;
+  margin: 21px 29px 29px 32px;
   padding: 15px 0 0 12px;
 }
 .user-name {
@@ -63,13 +75,12 @@ img {
   font-size: 16px;
 }
 .account {
-  margin: 55px 0 0 66px;
-  
+  margin: 55px 0 0 50px;
 }
 .userProfile{
   align-content: flex-start;
   padding-right: 17px;
-  background-color: #cfcbcb68;
+  background-color: #d6cbcb9e;
 }
 .btn {
   padding-bottom: 8px;
@@ -78,19 +89,18 @@ img {
 }
 .btn1{
   border-radius: 12px;
-  padding: 6px 22px 4px 22px;
+  padding: 6px 26px 4px 26px;
   border: none;
   color: #fff;
   font-size: 18px;
   background: #0342fe;
   cursor: pointer;
 }
-
 ul{
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 .today{
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 span{
   color: #000;
@@ -113,33 +123,30 @@ h5{
   background: #8e81817c;
   margin-bottom: 20px;
 }
-
 .center{
   padding-left: 100px;
   padding-top: 45px;
   background: #fff;
-
 }
 .goal{
   display: flex;
   gap: 30px;
-  padding-top: 32px;
+  padding-top: 21px;
 }
 .line2{
   height: 1px;
   width: 150px;
   background: #2906ed;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 div h1{
-  padding: 8px 0;
+  padding: 2px 0;
 }
 .center a{
   color: #2906ed;
 }
-
 .con-overtime{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .employer-data{
   display: flex;
@@ -155,17 +162,15 @@ div h1{
   height: 8px;
   width: 15px;
   border-radius: 30px;
-  background: #000;
+  background:#1c67e1f5;
 }
 .left-top{
-  background-color: #cecacaa7;
+  background-color: #cdc3c38e;
   margin-top: 40px;
   margin-right: 69px;
   padding: 19px;
   border-radius: 15px;
   margin-left: 70px;
- 
-
 }
 .left{
   background-color: #fff;
@@ -176,15 +181,24 @@ div h1{
 .Range{
   width: 200px;
   margin-top: 10px;
+  cursor: pointer;
 }
-
 .line3{
   height: 1px;
   width: 230px;
   background: #8e81817c;
   margin-top: 20px;
 }
-
+.Em-contri p{
+  padding: 12px 0;
+  font-weight: 600;
+}
+.em-N-1{
+  padding-left: 40px;
+}
+.em-N-2{
+  padding-left: 120px;
+}
 .Updata-btn{
   padding: 10px 90px;
   border-radius :15px;
@@ -192,9 +206,159 @@ div h1{
   background: blue;
   color: #fff;
   margin: 15px 0;
+  cursor: pointer;
 }
 .V-help{
   display: flex;
   justify-content: center;
   margin: 10px;
+  font-weight: bold;
+}
+.bottom-div{
+  padding-left: 66px;
+  display: flex;
+  margin-top: 50px;
+}
+.line-4{
+  height: 100px;
+  width: 1px;
+  background: #2906ed;
+  margin-right: 28px;
+
+}
+.Advance{
+  color: #000;
+  font-weight: bolder;
+  padding:  12px 0;
+}
+.limited{
+  color: #968e8e;
+  
+}
+.learn-more{
+  color: #2906ed;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+.left-bottom p {
+ margin-top: 10px;
+}
+.left-bottom a{
+  margin-top: 10px;
+}
+.age-salary{
+  display: flex;
+}
+.How-do{
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+@property --p{
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p:1;
+  --b:5px;
+  --c:darkred;
+  --w:70px;
+  
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:inline-grid;
+  margin:1px;
+  place-content:center;
+  font-size:14px;
+  font-weight:bold;
+  font-family:sans-serif;
+}
+.pie:before,
+.pie:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+}
+.pie:before {
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 78%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+.animate {
+  animation:p 1s .5s both;
+}
+.no-round:before {
+  background-size:0 0,auto;
+}
+.no-round:after {
+  content:none;
+}
+@keyframes p {
+  from{--p:0}
+}
+.pie-2{
+  display: flex;
+  margin-left: 60px;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+  
+}
+.user-age{
+  margin-top: 35px;
+}
+.user-age h3{
+  margin-top: 12px;
+  color: #968e8e;
+}
+.user-age h3 span{
+  color: #968e8e;
+  margin-left: 12px;
+}
+.Ave{
+  margin: 10px 0px 0px 2px;
+  color: #968e8e;
+}
+.top{
+  margin: 10px 0px 0px 20px;
+  color: #968e8e;
+}
+.me{
+  margin: 10px 0px 0px 20px;
+  color: #968e8e;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    display: inline;
+  }
+  .sidebar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    background: transparent;
+
+    
+  }
+  .topside{
+    display: flex;
+    position: fixed;
+    gap: 35px;
+  }
+  .fa-dove,.fa-sign-in-alt,.fa-bell{
+    display: none;
+  }
 }
