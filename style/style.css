@@ -12,6 +12,7 @@ body {
 }
 .container {
   display: flex;
+  height: 100vh;
 }
 .fas {
   font-size: 20px;
@@ -360,5 +361,28 @@ div h1{
   }
   .fa-dove,.fa-sign-in-alt,.fa-bell{
     display: none;
+  }
+  .userProfile{
+    background: #fff;
+    padding-top: 30px;
+  }
+  .y-t-d{
+    display: flex;
+    gap: 35px;
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+  .D-N{
+    display: none;
+  }
+  .ninety{
+    font-size: 48px;
+  }
+  .btn1{
+    padding: 10px 80px 10px 80px;
+  }
+  .account{
+    padding-left: 20px;
+
   }
 }
